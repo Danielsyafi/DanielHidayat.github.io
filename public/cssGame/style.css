@@ -1,0 +1,161 @@
+:root{
+  --main-color:#FF63D8;
+  --dark-blue: #001932;
+  --black:#13131a;
+  --bg:#010103;
+  --border:.1rem solid rgba(255,255,255,.3);
+}
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background: #fff;
+  border-radius: 5rem;
+}
+
+body{
+  text-align: center;
+  background: var(--bg);
+  background-image: url("/img/pixel13.gif");
+  background-position: 40% 40% ;
+}
+
+  
+.image{
+  padding: 0;
+}
+
+.image .Star1{
+  float: left;
+  display: flexbox;
+  padding: 0;
+}
+
+.Star2{
+  float: right;
+  display: flexbox;
+  padding: 0;
+}
+  
+  #level-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    margin:  5%;
+    color: #FEF2BF;
+  }
+  
+  .container {
+    display: block;
+    width: 50%;
+    margin: auto;
+  
+  }
+  
+  .btn {
+    display: inline-block;
+    height: 25rem;
+    width: 25rem;
+    border: 10px solid;
+    border-radius: 15px;
+  }
+  
+  .game-over {
+    background-color: red;
+    opacity: 0.8;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .pressed {
+    box-shadow: 0 0 20px white;
+    background-color: grey;
+  }
+  @media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 40%;
+    }
+    
+    section{
+        padding: 5rem 0 5rem 0;
+    }
+
+    .image{
+        display: block;
+    }
+}@media (max-width:991px){
+
+  html{
+      font-size: 55%;
+  }
+}
+
+@media (max-width:768px){
+
+  section{
+      padding: 2rem;
+  }
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 40%;
+  }
+  
+  section{
+      padding: 5rem 0 5rem 0;
+  }
+
+  .image{
+      display: block;
+  }
+}

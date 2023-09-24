@@ -1,0 +1,141 @@
+:root{
+    --main-color:#FF63D8;
+    --dark-blue: #001932;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+
+.image{
+    padding: 0;
+}
+
+.image .Star1{
+    float: left;
+    display: flexbox;
+    padding: 0;
+}
+
+.Star2{
+    float: right;
+    display: flexbox;
+    padding: 0;
+}
+
+section{
+    padding: 15rem 5%;
+}
+.volume {
+            display: inline-block;
+        }
+        .hide {
+            display: none;
+        }
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12rem 10rem 0rem 10rem;
+    
+}
+
+.about .row .content{
+    flex: 1 1 45rem;
+    background: rgba(0, 0, 0, 0.44);
+    border: 5px solid var(--main-color);
+    border-radius: 15px;
+    background-image: url(/img/pixel55.gif);
+}
+
+.about .row .content h3{
+    font-family: 'Nanum Myeongjo', serif;
+    color: var(--main-color);
+    font-size: 10rem;
+    padding: 10rem 5rem 0rem 5rem;
+    text-align: center;
+}
+
+.about .row .content h4{
+    font-family: 'Righteous', cursive;
+    color: #beb4b4;
+    font-size: 2rem;
+    padding: 2rem 0rem 2rem 0rem;
+    text-align: center;
+}
+
+.about .row .content .startBtn{
+    text-align: center;
+    margin: 0 0 5rem 0;   
+}
+
+
+.about .row .content .startBtn #start{
+    font-family: 'Righteous', cursive;
+    font-size: 3rem;
+    color: #ccc;
+    background-color: #10D000;
+    border-radius: 5px;
+    padding: 1rem;
+}
+
+
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width:768px){
+
+    section{
+        padding: 2rem;
+    }
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 40%;
+    }
+    
+    section{
+        padding: 5rem 0 5rem 0;
+    }
+
+    .image{
+        display: block;
+    }
+}
